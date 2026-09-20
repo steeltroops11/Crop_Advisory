@@ -17,11 +17,32 @@ class CropKnowledgeRetriever:
         self.client = chromadb.PersistentClient(path=str(VECTOR_DB_DIR))
         self.embed_fn = get_embedding_function()
 
+	HEAD
         self.collection = self.client.get_or_create_collection(
             name=CHROMA_COLLECTION_NAME,
             embedding_function=self.embed_fn,
         )
 
+        try:
+            self.collection = self.client.get_collection(
+                name=CHROMA_COLLECTION_NAME,
+                embedding_function=self.embed_fn,
+            )
+        except Exception:
+            from src.ingest import ingest_knowledge_base
+	    ce3609f (Build Chroma collection when missing)
+
+            print(
+                f"Collection '{CHROMA_COLLECTION_NAME}' not found. "
+                "Building ChromaDB from the knowledge base..."
+            )
+
+            ingest_knowledge_base()
+
+            self.collection = self.client.get_collection(
+                name=CHROMA_COLLECTION_NAME,
+                embedding_function=self.embed_fn,
+            )
     def retrieve(
         self,
         query: str,
