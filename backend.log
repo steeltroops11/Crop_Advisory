@@ -1,0 +1,10 @@
+INFO:     Started server process [16047]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+🚀 Initializing Kisan Mitra RAG Chain and Weather Services...
+✅ CropAdvisoryRAGChain initialised | Model: gemini-3.5-flash-lite | Top-K: 3
+🌾 Kisan Mitra Backend API Ready!
+INFO:     127.0.0.1:47370 - "GET / HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:47370 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:47370 - "GET /health HTTP/1.1" 200 OK

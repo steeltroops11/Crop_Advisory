@@ -1,0 +1,591 @@
+{
+  "metadata": {
+    "total_questions": 59,
+    "successful_responses": 32,
+    "errors": 27,
+    "generated_at": "2026-09-19T01:54:30.438760",
+    "agent_version": "CropAdvisoryRAGChain",
+    "evaluation_criteria": [
+      "FAITHFULNESS (30%) - Is answer grounded in PAU context?",
+      "ANSWER_RELEVANCE (25%) - Does answer address the query?",
+      "LANGUAGE_COMPLIANCE (10%) - Correct language/script?",
+      "SAFETY_COMPLIANCE (20%) - Includes KVK disclaimer?",
+      "AGRONOMIC_ACCURACY (15%) - Follows PAU practices?"
+    ]
+  },
+  "questions_and_answers": [
+    {
+      "question_id": "Q001",
+      "question": "What is the recommended urea dosage for paddy varieties like PR 126?",
+      "language_hint": "english",
+      "answer": "For the short-duration paddy variety PR 126, the total recommended dose of urea is 90 kg per acre, which must be applied in three equal splits completely within 35 days after transplanting. \n\nHere is the step-by-step guidance for applying urea to PR 126:\n1. **First Split:** Apply 30 kg of urea per acre at the time of transplanting.\n2. **Second Split:** Apply 30 kg of urea per acre around 18 to 20 days after transplanting.\n3. **Final Split:** Apply the last 30 kg of urea per acre by 35 days after transplanting. \n\n**Important Rule:** Do not apply any urea after 35 days for PR 126, as late urea can delay maturity, increase the risk of diseases like sheath blight and leaf folder, and cause the crop to lodge (fall down).\n\n⚠️ **Critical Safety:** Confirm with your local KVK before applying any chemical.\n\n📚 Source: pau_paddy_fert_02\n\n---\n⚠️ *यह AI-जनित सलाह है। महत्वपूर्ण निर्णयों के लिए अपने स्थानीय KVK (ਕ੍ਰਿਸ਼ੀ ਵਿਗਿਆਨ ਕੇਂਦਰ / Krishi Vigyan Kendra) से ਸੰਪਰਕ ਕਰੋ।*\n⚠️ *This is AI-generated advice. For critical decisions, consult your local KVK (Krishi Vigyan Kendra).*",
+      "answer_length": 1076,
+      "detected_crop": "paddy",
+      "language_used": "english",
+      "confidence": "high",
+      "timestamp": "2026-09-19T01:53:14.796188",
+      "retrieved_chunks_count": 3
+    },
+    {
+      "question_id": "Q002",
+      "question": "PR 126 lagayi hai 25 din ho gaye, urea kab aur kitna daalu?",
+      "language_hint": "hinglish",
+      "answer": "नमस्ते! किसान मित्र (Kisan Mitra) की तरफ से आपका स्वागत है।\n\nPR 126 धान की किस्म के लिए 25 दिन की अवस्था पर आपको दूसरी या तीसरी यूरिया की किस्त देनी है। चूंकि PR 126 एक कम अवधि (short duration) की किस्म है, इसलिए इसकी सारी यूरिया 35 दिन के अंदर पूरी करनी होती है।\n\n**आपके लिए जरूरी कदम (PAU सिफारिशों के अनुसार):**\n\n1. **यूरिया की मात्रा और समय:**\n   - रोपाई के समय (Transplanting): 30 किलो यूरिया प्रति एकड़ डाली जाती है।\n   - दूसरी किस्त (18-20 दिन पर): 30 किलो यूरिया प्रति एकड़ डाली जाती है।\n   - तीसरी/अंतिम किस्त (35 दिन तक): 30 किलो यूरिया प्रति एकड़ डालनी है।\n   - **ध्यान दें:** चूंकि आपकी फसल 25 दिन की हो चुकी है, अगर आपने 18-20 दिन वाली किस्त नहीं डाली है, तो उसे तुरंत दें और अंतिम किस्त 35 दिन तक पूरी कर लें। PR 126 में 35 दिन के बाद यूरिया बिल्कुल न डालें, इससे फसल को नुकसान हो सकता है (जैसे फसल का गिरना या बीमारियों का हमला)।\n\n⚠️ **जरूरी सुरक्षा सलाह:** किसी भी रसायन या खाद के इस्तेमाल से पहले अपने स्थानीय कृषि विज्ञान केंद्र (KVK) से पुष्टि जरूर कर लें।\n\n📚 Source: pau_paddy_fert_02\n\n---\n⚠️ *यह AI-जनित सलाह है। महत्वपूर्ण निर्णयों के लिए अपने स्थानीय KVK (ਕ੍ਰਿਸ਼ੀ ਵਿਗਿਆਨ ਕੇਂਦਰ / Krishi Vigyan Kendra) से ਸੰਪਰਕ ਕਰੋ।*\n⚠️ *This is AI-generated advice. For critical decisions, consult your local KVK (Krishi Vigyan Kendra).*",
+      "answer_length": 1243,
+      "detected_crop": "paddy",
+      "language_used": "hindi",
+      "confidence": "medium",
+      "timestamp": "2026-09-19T01:53:17.012207",
+      "retrieved_chunks_count": 3
+    },
+    {
+      "question_id": "Q003",
+      "question": "ਪੜੀ ਵਿੱਚ ਊਰੀਆ ਦੀ Quantity ਕਿੰਨੀ ਲਾਗੀ ਚਾਹੀਦੀ ਹੈ?",
+      "language_hint": "punjabi",
+      "answer": "ਸਤਿ ਸ੍ਰੀ ਅਕਾਲ ਜੀ। ਕਿਸਾਨ ਮਿੱਤਰ ਵੱਲੋਂ ਤੁਹਾਡੀ ਸੇਵਾ ਵਿੱਚ ਹਾਜ਼ਰ ਹਾਂ।\n\nਮੌਜੂਦਾ ਪੀ.ਏ.ਯੂ. (PAU) ਦੇ ਅੰਕੜਿਆਂ ਮੁਤਾਬਕ, ਝੋਨੇ (ਪੜੀ) ਵਿੱਚ ਯੂਰੀਆ ਦੀ ਪੂਰੀ ਮਾਤਰਾ ਨੂੰ 3 ਕਿਸਤਾਂ ਵਿੱਚ ਪਾਉਣ ਦੀ ਸਿਫਾਰਸ਼ ਕੀਤੀ ਗਈ ਹੈ ਅਤੇ ਇਸ ਨੂੰ PR 126 ਕਿਸਮ ਲਈ 35 ਦਿਨਾਂ ਦੇ ਅੰਦਰ ਅਤੇ ਹੋਰ ਕਿਸਮਾਂ ਲਈ 42 ਦਿਨਾਂ ਦੇ ਅੰਦਰ ਪੂਰਾ ਕਰ ਲੈਣਾ ਚਾਹੀਦਾ ਹੈ।\n\n**ਕਿਸਾਨ ਭਰਾਵਾਂ ਲਈ ਜ਼ਰੂਰੀ ਕਦਮ:**\n1. ਯੂਰੀਆ ਖਾਦ ਨੂੰ 3 ਬਰਾਬਰ ਕਿਸਤਾਂ ਵਿੱਚ ਪਾਓ।\n2. PR 126 ਕਿਸਮ ਵਿੱਚ ਯੂਰੀਆ ਪਾਉਣ ਦਾ ਕੰਮ 35 ਦਿਨਾਂ ਦੇ اندر-ਅੰਦਰ ਪੂਰਾ ਕਰੋ।\n3. ਦੂਜੀਆਂ ਕਿਸਮਾਂ ਵਿੱਚ ਯੂਰੀਆ 42 ਦਿਨਾਂ ਦੇ ਅੰਦਰ-ਅੰਦਰ ਮੁਕੰਮਲ ਕਰੋ।\n\n⚠️ **ਖਾਸ ਸਾਵਧਾਨੀ:** ਕਿਸੇ ਵੀ ਰਸਾਇਣ ਜਾਂ ਖਾਦ ਦੀ ਮਾਤਰਾ ਨੂੰ ਖੇਤ ਵਿੱਚ ਵਰਤਣ ਤੋਂ ਪਹਿਲਾਂ ਆਪਣੇ ਨੇੜਲੇ ਕ੍ਰਿਸ਼ੀ ਵਿਗਿਆਨ ਕੇਂਦਰ (KVK) ਨਾਲ ਜ਼ਰੂਰ ਪੁਸ਼ਟੀ ਕਰ ਲਵੋ ਜੀ।\n\n📚 Source: pau_paddy_overview_01\n\n---\n⚠️ *यह AI-जनित सलाह है। महत्वपूर्ण निर्णयों के लिए अपने स्थानीय KVK (ਕ੍ਰਿਸ਼ੀ ਵਿਗਿਆਨ ਕੇਂਦਰ / Krishi Vigyan Kendra) से ਸੰਪਰਕ ਕਰੋ।*\n⚠️ *This is AI-generated advice. For critical decisions, consult your local KVK (Krishi Vigyan Kendra).*",
+      "answer_length": 914,
+      "detected_crop": null,
+      "language_used": "punjabi",
+      "confidence": "low",
+      "timestamp": "2026-09-19T01:53:19.726917",
+      "retrieved_chunks_count": 3
+    },
+    {
+      "question_id": "Q004",
+      "question": "When should I apply the first dose of urea to paddy?",
+      "language_hint": "english",
+      "answer": "Hello! As Kisan Mitra, I am here to help you with your paddy crop based on Punjab Agricultural University (PAU) recommendations.\n\nFor standard paddy varieties, the first dose (basal dose) of urea should be applied right at the time of transplanting (30 kg per acre). However, if you have incorporated green manure like dhaincha or sunhemp in your field, you should omit this basal dose.\n\nHere is the step-by-step guidance for applying the first dose:\n1. **Timing:** Apply 30 kg of urea per acre at the time of transplanting (basal application). (Note: For the short-duration variety PR 126, the first dose is also applied at transplanting).\n2. **Application Method:** Apply the urea into moist soil, rather than deep standing flood water, to ensure the plant absorbs it properly.\n\nConfirm with your local KVK before applying any chemical.\n\n📚 Source: pau_paddy_fert_01, pau_paddy_fert_02\n\n---\n⚠️ *यह AI-जनित सलाह है। महत्वपूर्ण निर्णयों के लिए अपने स्थानीय KVK (ਕ੍ਰਿਸ਼ੀ ਵਿਗਿਆਨ ਕੇਂਦਰ / Krishi Vigyan Kendra) से ਸੰਪਰਕ ਕਰੋ।*\n⚠️ *This is AI-generated advice. For critical decisions, consult your local KVK (Krishi Vigyan Kendra).*",
+      "answer_length": 1125,
+      "detected_crop": "paddy",
+      "language_used": "english",
+      "confidence": "high",
+      "timestamp": "2026-09-19T01:53:21.546958",
+      "retrieved_chunks_count": 3
+    },
+    {
+      "question_id": "Q005",
+      "question": "Paddy mein pehla urea kab dalna chahiye?",
+      "language_hint": "hindi",
+      "answer": "धान (पaddy) में यूरीया डालने का सही समय किस्म पर निर्भर करता है, लेकिन आम तौर पर पहली खुराक रोपाई के समय ही डाली जाती है।\n\nपी.ए.यू. (PAU) की सिफारिश के अनुसार धान में यूरीया प्रबंधन के चरण इस प्रकार हैं:\n\n1. **पहली खुराक:** रोपाई के समय ही यूरीया की पहली किस्त (जैसे PR 126 किस्म के लिए 30 किलोग्राम यूरीया) खेत में डालें।\n2. **अगली खुराकें:** यूरीया को कुल 3 बराबर किस्तों में पूरा करना होता है। PR 126 किस्म के लिए इसे 35 दिनों के भीतर (पहला रोपाई के समय, दूसरा 18-20 दिनों पर, और तीसरा 35 दिनों तक) पूरा कर लें। अन्य मानक किस्मों के लिए इसे 42 दिनों तक पूरा करें।\n3. **महत्वपूर्ण चेतावनी:** PR 126 में 35 दिन और अन्य किस्मों में 42 दिन के बाद कभी भी यूरीया न डालें।\n\n⚠️ किसी भी रसायन या खाद के छिड़काव से पहले अपने नजदीकी कृषि विज्ञान केंद्र (KVK) से पुष्टि जरूर कर लें।\n\n📚 Source: pau_paddy_overview_01, pau_paddy_fert_04, pau_paddy_fert_02\n\n---\n⚠️ *यह AI-जनित सलाह है। महत्वपूर्ण निर्णयों के लिए अपने स्थानीय KVK (ਕ੍ਰਿਸ਼ੀ ਵਿਗਿਆਨ ਕੇਂਦਰ / Krishi Vigyan Kendra) से ਸੰਪਰਕ ਕਰੋ।*\n⚠️ *This is AI-generated advice. For critical decisions, consult your local KVK (Krishi Vigyan Kendra).*",
+      "answer_length": 1083,
+      "detected_crop": "paddy",
+      "language_used": "hindi",
+      "confidence": "high",
+      "timestamp": "2026-09-19T01:53:24.011458",
+      "retrieved_chunks_count": 3
+    },
+    {
+      "question_id": "Q006",
+      "question": "What is the split dosage schedule for urea in paddy?",
+      "language_hint": "english",
+      "answer": "Hello! I am Kisan Mitra, your PAU agricultural assistant. \n\nFor standard paddy varieties (like PR 121, PR 128, and PR 130), a total of 90 kg of Urea per acre is recommended in 3 equal splits. For short-duration varieties like PR 126, the schedule is finished earlier within 35 days.\n\nHere is the step-by-step PAU schedule for applying urea in paddy:\n\n**1. For Standard Varieties (PR 121, PR 128, PR 130, etc.):**\n* **First Split (Basal):** Apply **30 kg** of Urea per acre at the time of transplanting into moist soil (note: omit this basal dose if green manure like dhaincha or sunhemp was incorporated).\n* **Second Split:** Apply **30 kg** of Urea per acre at **21 days** after transplanting.\n* **Third Split:** Apply **30 kg** of Urea per acre at **42 days** after transplanting.\n\n**2. For Short-Duration Variety (PR 126):**\n* **First Split:** Apply **30 kg** of Urea per acre at transplanting.\n* **Second Split:** Apply **30 kg** of Urea per acre around **18 to 20 days** after transplanting.\n* **Third Split:** Apply **30 kg** of Urea per acre by **35 days** after transplanting (do not apply any urea after 35 days for PR 126).\n\n**Important Safety & Application Tips:**\n* Apply urea into moist soil, not into deep standing flood water.\n* Never apply urea after 42 days for standard varieties (or after 35 days for PR 126) to avoid crop lodging, delayed maturity, and pest attacks.\n* *Confirm with your local KVK before applying any chemical.*\n\n📚 Source: pau_paddy_fert_01, pau_paddy_fert_02, pau_paddy_fert_04\n\n---\n⚠️ *यह AI-जनित सलाह है। महत्वपूर्ण निर्णयों के लिए अपने स्थानीय KVK (ਕ੍ਰਿਸ਼ੀ ਵਿਗਿਆਨ ਕੇਂਦਰ / Krishi Vigyan Kendra) से ਸੰਪਰਕ ਕਰੋ।*\n⚠️ *This is AI-generated advice. For critical decisions, consult your local KVK (Krishi Vigyan Kendra).*",
+      "answer_length": 1754,
+      "detected_crop": "paddy",
+      "language_used": "english",
+      "confidence": "high",
+      "timestamp": "2026-09-19T01:53:26.281578",
+      "retrieved_chunks_count": 3
+    },
+    {
+      "question_id": "Q007",
+      "question": " kitna urea pehle dose mein aur kitna dusre dose mein dena chahiye?",
+      "language_hint": "hinglish",
+      "answer": "नमस्ते किसान भाई! कनक (गेहूँ) की फसल में यूरिया (नाइट्रोजन) की मात्रा और देने का सही तरीका पंजाब कृषि विश्वविद्यालय (PAU) की सिफारिश के अनुसार इस प्रकार है:\n\nकनक में बुवाई के समय पूरी डीएपी (55 किलोग्राम प्रति एकड़) के साथ **आधा यूरिया** दिया जाता है, और बाकी का बचा हुआ यूरिया **पहली सिंचाई (CRI अवस्था, यानी बुवाई के 20-25 दिन बाद)** के समय पूरा कर लिया जाता है। \n\nपीएयू (PAU) के नियमों के अनुसार ध्यान रखें कि सारी नाइट्रोजन/यूरिया का इस्तेमाल दूसरी सिंचाई से पहले (अधिकतम 45-50 दिन की फसल तक) पूरा कर लेना चाहिए। इसके बाद यूरिया नहीं डालना चाहिए।\n\n**जरूरी सलाह:**\n1. बुवाई के समय आधा यूरिया और पहली सिंचाई (CRI स्टेज) पर बाकी बचा हुआ यूरिया दें।\n2. किसी भी रासायनिक खाद या यूरिया का छिड़काव करने से पहले अपने नजदीकी कृषि विज्ञान केंद्र (KVK) से पुष्टि जरूर कर लें।\n\n📚 Source: pau_wheat_overview_01, pau_wheat_fert_02\n\n---\n⚠️ *यह AI-जनित सलाह है। महत्वपूर्ण निर्णयों के लिए अपने स्थानीय KVK (ਕ੍ਰਿਸ਼ੀ ਵਿਗਿਆਨ ਕੇਂਦਰ / Krishi Vigyan Kendra) से ਸੰਪਰਕ ਕਰੋ।*\n⚠️ *This is AI-generated advice. For critical decisions, consult your local KVK (Krishi Vigyan Kendra).*",
+      "answer_length": 1059,
+      "detected_crop": null,
+      "language_used": "hindi",
+      "confidence": "medium",
+      "timestamp": "2026-09-19T01:53:28.532445",
+      "retrieved_chunks_count": 3
+    },
+    {
+      "question_id": "Q008",
+      "question": "What is the CRI stage in wheat and when does it occur?",
+      "language_hint": "english",
+      "answer": "The CRI stage (Crown Root Initiation) in wheat is the single most critical stage when the permanent root system that anchors the plant and feeds tillers develops. It occurs strictly at **20 to 25 days after sowing (DAS)**.\n\n### Step-by-Step Guidance:\n1. **Apply the 1st Irrigation:** Give the first irrigation lightly at 20 to 25 days after sowing. Do not miss or delay this irrigation, even if water is short.\n2. **Fertilizer Application:** Broadcast the second half of Urea (45-55 kg/acre) immediately before or right after this irrigation.\n\n*Confirm with your local KVK before applying any chemical.*\n\n📚 Source: pau_wheat_irrig_01, pau_wheat_overview_01\n\n---\n⚠️ *यह AI-जनित सलाह है। महत्वपूर्ण निर्णयों के लिए अपने स्थानीय KVK (ਕ੍ਰਿਸ਼ੀ ਵਿਗਿਆਨ ਕੇਂਦਰ / Krishi Vigyan Kendra) से ਸੰਪਰਕ ਕਰੋ।*\n⚠️ *This is AI-generated advice. For critical decisions, consult your local KVK (Krishi Vigyan Kendra).*",
+      "answer_length": 895,
+      "detected_crop": "wheat",
+      "language_used": "english",
+      "confidence": "high",
+      "timestamp": "2026-09-19T01:53:30.580393",
+      "retrieved_chunks_count": 3
+    },
+    {
+      "question_id": "Q009",
+      "question": "Gehun me pehla paani kab lagana chahiye?",
+      "language_hint": "hindi",
+      "answer": "गेहूँ में पहला पानी (Crown Root Initiation या CRI स्टेज पर) बुवाई के 20 से 25 दिन बाद लगाना चाहिए, क्योंकि यह फसल के लिए सबसे महत्वपूर्ण सिंचाई चरण है।\n\n**कारगर सलाह (Actionable Guidance):**\n* **समय:** बुवाई के 20-25 दिन बाद पहला पानी दें।\n* **खाद प्रबंधन:** पहली सिंचाई (CRI स्टेज) के समय ही यूरिया की शेष बची हुई मात्रा दें।\n* **खरपतवार नियंत्रण:** पहले पानी के 2-3 दिन बाद, जब खेत में सही नमी (वत्तर) हो, तब सिफारिश के अनुसार गੁੱली डੰਡਾ (Phalaris minor) के लिए खरपतवारनाशक का छिड़काव करें।\n\n⚠️ *चेतावनी: किसी भी रसायन या कीटनाशक का छिड़काव करने से पहले अपने नजदीकी केवीके (KVK) से पुष्टि अवश्य कर लें।*\n\n📚 Source: pau_wheat_overview_01, pau_wheat_weed_01\n\n---\n⚠️ *यह AI-जनित सलाह है। महत्वपूर्ण निर्णयों के लिए अपने स्थानीय KVK (ਕ੍ਰਿਸ਼ੀ ਵਿਗਿਆਨ ਕੇਂਦਰ / Krishi Vigyan Kendra) से ਸੰਪਰਕ ਕਰੋ।*\n⚠️ *This is AI-generated advice. For critical decisions, consult your local KVK (Krishi Vigyan Kendra).*",
+      "answer_length": 896,
+      "detected_crop": "wheat",
+      "language_used": "hindi",
+      "confidence": "low",
+      "timestamp": "2026-09-19T01:53:32.423846",
+      "retrieved_chunks_count": 3
+    },
+    {
+      "question_id": "Q010",
+      "question": "ਕਣਕ ਵਿੱਚ CRI stage kada ave hai?",
+      "language_hint": "punjabi",
+      "answer": "ਕਣਕ ਵਿੱਚ CRI (Crown Root Initiation) ਸਟੇਜ ਬਿਜਾਈ ਤੋਂ 20 ਤੋਂ 25 ਦਿਨਾਂ ਬਾਅਦ ਆਉਂਦੀ ਹੈ। ਇਹ ਕਣਕ ਦੀ ਫ਼ਸਲ ਲਈ ਸਭ ਤੋਂ ਪਹਿਲਾ ਅਤੇ ਸਭ ਤੋਂ ਜ਼ਰੂਰੀ ਪਾਣੀ ਹੁੰਦਾ ਹੈ।\n\n**ਕਿਸਾਨ ਭਰਾਵਾਂ ਲਈ ਜ਼ਰੂਰੀ ਕਦਮ:**\n1. ਬਿਜਾਈ ਤੋਂ 20-25 ਦਿਨਾਂ ਬਾਅਦ ਖੇਤ ਵਿੱਚ ਪਹਿਲਾ ਪਾਣੀ (ਹਲਕਾ ਪਾਣੀ) ਜ਼ਰੂਰ ਲਗਾਓ।\n2. ਇਸ ਪਹਿਲੇ ਪਾਣੀ (CRI ਸਟੇਜ) ਦੇ ਸਮੇਂ ਹੀ ਯੂਰੀਆ ਖਾਦ ਦੀ ਰਹਿੰਦੀ ਅੱਧੀ ਬਾਕੀ ਮਾਤਰਾ ਪਾਣੀ ਲਗਾਉਣ ਤੋਂ ਪਹਿਲਾਂ ਜਾਂ ਤੁਰੰਤ ਬਾਅਦ ਛਿੜਕ ਦਿਓ।\n\n⚠️ *ਕਿਸੇ ਵੀ ਰਸਾਇਣ ਜਾਂ ਖਾਦ ਦੀ ਵਰਤੋਂ ਕਰਨ ਤੋਂ ਪਹਿਲਾਂ ਆਪਣੇ ਨੇੜਲੇ ਕ੍ਰਿਸ਼ੀ ਵਿਗਿਆਨ ਕੇਂਦਰ (KVK) ਨਾਲ ਜ਼ਰੂਰ ਤਸਦੀਕ ਕਰ ਲਓ।*\n\n📚 Source: pau_wheat_overview_01, pau_wheat_irrig_01\n\n---\n⚠️ *यह AI-जनित सलाह है। महत्वपूर्ण निर्णयों के लिए अपने स्थानीय KVK (ਕ੍ਰਿਸ਼ੀ ਵਿਗਿਆਨ ਕੇਂਦਰ / Krishi Vigyan Kendra) से ਸੰਪਰਕ ਕਰੋ।*\n⚠️ *This is AI-generated advice. For critical decisions, consult your local KVK (Krishi Vigyan Kendra).*",
+      "answer_length": 780,
+      "detected_crop": "wheat",
+      "language_used": "punjabi",
+      "confidence": "medium",
+      "timestamp": "2026-09-19T01:53:34.880883",
+      "retrieved_chunks_count": 3
+    },
+    {
+      "question_id": "Q011",
+      "question": "When should I give the first irrigation to wheat?",
+      "language_hint": "english",
+      "answer": "Hello! Here is the guidance for irrigating your wheat crop based on Punjab Agricultural University (PAU) recommendations:\n\nYou should give the first irrigation to your wheat crop strictly at **20 to 25 days after sowing**, which is the Crown Root Initiation (CRI) stage. This is the single most critical irrigation of the wheat crop and must not be missed.\n\n### Step-by-Step Guidance:\n1. **Irrigation timing:** Apply the first irrigation lightly at 20-25 days after sowing, even if water is constrained, because missing it can permanently stunt root growth and reduce tillers.\n2. **Fertilizer application:** Broadcast the remaining half of Urea (45-55 kg per acre) immediately before or right after this first irrigation.\n\n*⚠️ Note: Confirm with your local KVK before applying any chemical.*\n\n📚 Source: pau_wheat_irrig_01, pau_wheat_fert_01\n\n---\n⚠️ *यह AI-जनित सलाह है। महत्वपूर्ण निर्णयों के लिए अपने स्थानीय KVK (ਕ੍ਰਿਸ਼ੀ ਵਿਗਿਆਨ ਕੇਂਦਰ / Krishi Vigyan Kendra) से ਸੰਪਰਕ ਕਰੋ।*\n⚠️ *This is AI-generated advice. For critical decisions, consult your local KVK (Krishi Vigyan Kendra).*",
+      "answer_length": 1079,
+      "detected_crop": "wheat",
+      "language_used": "english",
+      "confidence": "high",
+      "timestamp": "2026-09-19T01:53:36.727434",
+      "retrieved_chunks_count": 3
+    },
+    {
+      "question_id": "Q012",
+      "question": "What fertilizer is recommended at sowing time for wheat?",
+      "language_hint": "english",
+      "answer": "For medium fertility wheat, PAU recommends applying 55 kg of DAP and 55 kg of Urea per acre at the time of sowing. If your soil is deficient in potassium, you should also add 20 kg of MOP per acre.\n\n**Step-by-step guidance for sowing time fertilizer:**\n1. Drill the full 55 kg of DAP and half of the Urea (55 kg) directly below the seed at sowing using a seed-cum-fertilizer drill.\n2. If your preceding crop was green-manured, you can reduce the total urea requirement to 90 kg.\n3. Keep the remaining half of the Urea (55 kg) to apply later at the 1st irrigation (20-25 days after sowing).\n\n*Note: Confirm with your local KVK before applying any chemical.*\n\n📚 Source: pau_wheat_fert_01\n\n---\n⚠️ *यह AI-जनित सलाह है। महत्वपूर्ण निर्णयों के लिए अपने स्थानीय KVK (ਕ੍ਰਿਸ਼ੀ ਵਿਗਿਆਨ ਕੇਂਦਰ / Krishi Vigyan Kendra) से ਸੰਪਰਕ ਕਰੋ।*\n⚠️ *This is AI-generated advice. For critical decisions, consult your local KVK (Krishi Vigyan Kendra).*",
+      "answer_length": 924,
+      "detected_crop": "wheat",
+      "language_used": "english",
+      "confidence": "high",
+      "timestamp": "2026-09-19T01:53:38.734397",
+      "retrieved_chunks_count": 3
+    },
+    {
+      "question_id": "Q013",
+      "question": "Gehun ki behai mein kya daalna chahiye?",
+      "language_hint": "hindi",
+      "answer": "गेहूं की बीजाई (बुआई) के समय प्रति एकड़ 55 किलोग्राम डीएपी (DAP) खाद और आधी यूरिया का इस्तेमाल करना चाहिए। बाकी बची हुई यूरिया की मात्रा को पहली सिंचाई (ताज जड़ निकलने के समय यानी CRI स्टेज पर) के समय देना चाहिए।\n\n**कारगर सलाह (Actionable Guidance):**\n1. हमेशा प्रमाणित बीज का उपयोग करें और समय पर बीजाई (1-15 नवंबर लंबी किस्मों के लिए) करें।\n2. खाद को बीज के नीचे ड्रिल करें।\n3. नाइट्रोजन (यूरिया) की पूरी मात्रा दूसरी सिंचाई से पहले पूरी कर लें।\n\n⚠️ **जरूरी सावधानी:** किसी भी रासायनिक खाद या दवा का छिड़काव करने से पहले अपने नजदीकी कृषि विज्ञान केंद्र (KVK) से अवश्य पुष्टि कर लें।\n\n📚 Source: pau_wheat_overview_01\n\n---\n⚠️ *यह AI-जनित सलाह है। महत्वपूर्ण निर्णयों के लिए अपने स्थानीय KVK (ਕ੍ਰਿਸ਼ੀ ਵਿਗਿਆਨ ਕੇਂਦਰ / Krishi Vigyan Kendra) से ਸੰਪਰਕ ਕਰੋ।*\n⚠️ *This is AI-generated advice. For critical decisions, consult your local KVK (Krishi Vigyan Kendra).*",
+      "answer_length": 856,
+      "detected_crop": "wheat",
+      "language_used": "hindi",
+      "confidence": "medium",
+      "timestamp": "2026-09-19T01:53:40.615934",
+      "retrieved_chunks_count": 3
+    },
+    {
+      "question_id": "Q014",
+      "question": "What is the recommended planting time for sugarcane in Punjab?",
+      "language_hint": "english",
+      "answer": "I don't have enough PAU data for this. Please consult your local KVK.\n\n📚 Source: None (PAU data for sugarcane planting time is not available in the current knowledge base)\n\n---\n⚠️ *यह AI-जनित सलाह है। महत्वपूर्ण निर्णयों के लिए अपने स्थानीय KVK (ਕ੍ਰਿਸ਼ੀ ਵਿਗਿਆਨ ਕੇਂਦਰ / Krishi Vigyan Kendra) से ਸੰਪਰਕ ਕਰੋ।*\n⚠️ *This is AI-generated advice. For critical decisions, consult your local KVK (Krishi Vigyan Kendra).*",
+      "answer_length": 410,
+      "detected_crop": null,
+      "language_used": "english",
+      "confidence": "high",
+      "timestamp": "2026-09-19T01:53:42.232394",
+      "retrieved_chunks_count": 3
+    },
+    {
+      "question_id": "Q015",
+      "question": "Ganna kaudai ka samay kab hota hai?",
+      "language_hint": "hindi",
+      "answer": "I don't have enough PAU data for this. Please consult your local KVK.\n\n📚 Source: None (Insufficient PAU context available)\n\n---\n⚠️ *यह AI-जनित सलाह है। महत्वपूर्ण निर्णयों के लिए अपने स्थानीय KVK (ਕ੍ਰਿਸ਼ੀ ਵਿਗਿਆਨ ਕੇਂਦਰ / Krishi Vigyan Kendra) से ਸੰਪਰਕ ਕਰੋ।*\n⚠️ *This is AI-generated advice. For critical decisions, consult your local KVK (Krishi Vigyan Kendra).*",
+      "answer_length": 361,
+      "detected_crop": null,
+      "language_used": "english",
+      "confidence": "medium",
+      "timestamp": "2026-09-19T01:53:43.689056",
+      "retrieved_chunks_count": 3
+    },
+    {
+      "question_id": "Q016",
+      "question": "How much water does sugarcane need per irrigation?",
+      "language_hint": "english",
+      "answer": "I don't have enough PAU data for this. Please consult your local KVK.\n\n📚 Source: pau_paddy_overview_01, pau_wheat_fert_01, pau_wheat_weed_01\n\n---\n⚠️ *यह AI-जनित सलाह है। महत्वपूर्ण निर्णयों के लिए अपने स्थानीय KVK (ਕ੍ਰਿਸ਼ੀ ਵਿਗਿਆਨ ਕੇਂਦਰ / Krishi Vigyan Kendra) से ਸੰਪਰਕ ਕਰੋ।*\n⚠️ *This is AI-generated advice. For critical decisions, consult your local KVK (Krishi Vigyan Kendra).*",
+      "answer_length": 379,
+      "detected_crop": null,
+      "language_used": "english",
+      "confidence": "high",
+      "timestamp": "2026-09-19T01:53:45.325873",
+      "retrieved_chunks_count": 3
+    },
+    {
+      "question_id": "Q017",
+      "question": "Ganna ik irrigation kitna paani leta hai?",
+      "language_hint": "punjabi",
+      "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\\nPlease retry in 14.032192554s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.5-flash-lite'}, 'quotaValue': '15'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '14s'}]}}",
+      "timestamp": "2026-09-19T01:53:46.067402"
+    },
+    {
+      "question_id": "Q018",
+      "question": "What is the recommended spacing for cotton planting?",
+      "language_hint": "english",
+      "answer": "I don't have enough PAU data for this. Please consult your local KVK.\n\n📚 Source: pau_wheat_fert_01, pau_wheat_fert_02, pau_paddy_overview_01\n\n---\n⚠️ *यह AI-जनित सलाह है। महत्वपूर्ण निर्णयों के लिए अपने स्थानीय KVK (ਕ੍ਰਿਸ਼ੀ ਵਿਗਿਆਨ ਕੇਂਦਰ / Krishi Vigyan Kendra) से ਸੰਪਰਕ ਕਰੋ।*\n⚠️ *This is AI-generated advice. For critical decisions, consult your local KVK (Krishi Vigyan Kendra).*",
+      "answer_length": 379,
+      "detected_crop": null,
+      "language_used": "english",
+      "confidence": "high",
+      "timestamp": "2026-09-19T01:53:47.579339",
+      "retrieved_chunks_count": 3
+    },
+    {
+      "question_id": "Q019",
+      "question": "Kapas ki kheti mein kitni dorani rakhni chahiye?",
+      "language_hint": "hindi",
+      "answer": "I don't have enough PAU data for this. Please consult your local KVK.\n\n📚 Source: None (PAU context does not contain information on Kapas / cotton spacing).\n\n---\n⚠️ *यह AI-जनित सलाह है। महत्वपूर्ण निर्णयों के लिए अपने स्थानीय KVK (ਕ੍ਰਿਸ਼ੀ ਵਿਗਿਆਨ ਕੇਂਦਰ / Krishi Vigyan Kendra) से ਸੰਪਰਕ ਕਰੋ।*\n⚠️ *This is AI-generated advice. For critical decisions, consult your local KVK (Krishi Vigyan Kendra).*",
+      "answer_length": 394,
+      "detected_crop": null,
+      "language_used": "english",
+      "confidence": "medium",
+      "timestamp": "2026-09-19T01:53:48.807409",
+      "retrieved_chunks_count": 3
+    },
+    {
+      "question_id": "Q020",
+      "question": "When should I apply pesticides for cotton bollworm?",
+      "language_hint": "english",
+      "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\\nPlease retry in 10.511482295s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.5-flash-lite'}, 'quotaValue': '15'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '10s'}]}}",
+      "timestamp": "2026-09-19T01:53:49.627152"
+    },
+    {
+      "question_id": "Q021",
+      "question": "Kapas mein sundar daman ke liye pesticide kab spray karna chahiye?",
+      "language_hint": "hindi",
+      "answer": "नमस्ते किसान भाई! मैं किसान मित्र हूँ। \n\nआपके द्वारा पूछे गए सवाल (ਕਪਾਸ में सुंडी दमन के लिए पेस्टिसाइड कब स्प्रे करना चाहिए?) के संबंध में, मेरे पास अभी उपलब्ध पीएयू (PAU) डेटा में केवल धान (Paddy) और चावल की फसलों से संबंधित जानकारी ही मौजूद है। कपास (Kapas/Cotton) की फसल या उसकी सुंडियों के नियंत्रण से जुड़ा कोई डेटा मेरे वर्तमान ज्ञानकोष में नहीं है।\n\nकपास में सुंडी के नियंत्रण और सही समय पर स्प्रे के बारे में सटीक जानकारी के लिए, कृपया अपने नजदीकी कृषि विज्ञान केंद्र (KVK) से संपर्क करें।\n\n📚 Source: I don't have enough PAU data for this. Please consult your local KVK.\n\n---\n⚠️ *यह AI-जनित सलाह है। महत्वपूर्ण निर्णयों के लिए अपने स्थानीय KVK (ਕ੍ਰਿਸ਼ੀ ਵਿਗਿਆਨ ਕੇਂਦਰ / Krishi Vigyan Kendra) से ਸੰਪਰਕ ਕਰੋ।*\n⚠️ *This is AI-generated advice. For critical decisions, consult your local KVK (Krishi Vigyan Kendra).*",
+      "answer_length": 818,
+      "detected_crop": null,
+      "language_used": "hindi",
+      "confidence": "high",
+      "timestamp": "2026-09-19T01:53:51.675815",
+      "retrieved_chunks_count": 3
+    },
+    {
+      "question_id": "Q022",
+      "question": "What is the seed treatment recommended for moong before sowing?",
+      "language_hint": "english",
+      "answer": "I don't have enough PAU data for this. Please consult your local KVK.\n\n📚 Source: None (PAU context does not contain information about moong seed treatment)\n\n---\n⚠️ *यह AI-जनित सलाह है। महत्वपूर्ण निर्णयों के लिए अपने स्थानीय KVK (ਕ੍ਰਿਸ਼ੀ ਵਿਗਿਆਨ ਕੇਂਦਰ / Krishi Vigyan Kendra) से ਸੰਪਰਕ ਕਰੋ।*\n⚠️ *This is AI-generated advice. For critical decisions, consult your local KVK (Krishi Vigyan Kendra).*",
+      "answer_length": 394,
+      "detected_crop": null,
+      "language_used": "english",
+      "confidence": "high",
+      "timestamp": "2026-09-19T01:53:52.904461",
+      "retrieved_chunks_count": 3
+    },
+    {
+      "question_id": "Q023",
+      "question": "Mungi ki beej ka upchar kaise karein?",
+      "language_hint": "hindi",
+      "answer": "I don't have enough PAU data for this. Please consult your local KVK.\n\n📚 Source: None (PAU context does not contain information on Mungi seed treatment).\n\n---\n⚠️ *यह AI-जनित सलाह है। महत्वपूर्ण निर्णयों के लिए अपने स्थानीय KVK (ਕ੍ਰਿਸ਼ੀ ਵਿਗਿਆਨ ਕੇਂਦਰ / Krishi Vigyan Kendra) से ਸੰਪਰਕ ਕਰੋ।*\n⚠️ *This is AI-generated advice. For critical decisions, consult your local KVK (Krishi Vigyan Kendra).*",
+      "answer_length": 392,
+      "detected_crop": null,
+      "language_used": "english",
+      "confidence": "medium",
+      "timestamp": "2026-09-19T01:53:54.370138",
+      "retrieved_chunks_count": 3
+    },
+    {
+      "question_id": "Q024",
+      "question": "When should I harvest moong for best yield?",
+      "language_hint": "english",
+      "answer": "I don't have enough PAU data for this. Please consult your local KVK.\n\n📚 Source: None (PAU context does not contain information on harvesting moong).\n\n---\n⚠️ *यह AI-जनित सलाह है। महत्वपूर्ण निर्णयों के लिए अपने स्थानीय KVK (ਕ੍ਰਿਸ਼ੀ ਵਿਗਿਆਨ ਕੇਂਦਰ / Krishi Vigyan Kendra) से ਸੰਪਰਕ ਕਰੋ।*\n⚠️ *This is AI-generated advice. For critical decisions, consult your local KVK (Krishi Vigyan Kendra).*",
+      "answer_length": 388,
+      "detected_crop": null,
+      "language_used": "english",
+      "confidence": "high",
+      "timestamp": "2026-09-19T01:53:55.770717",
+      "retrieved_chunks_count": 3
+    },
+    {
+      "question_id": "Q025",
+      "question": "Mungi ki katni kab karni chahiye?",
+      "language_hint": "hindi",
+      "answer": "नमस्कार! किसान भाई, आपके द्वारा पूछे गए सवाल (\"मूंग की कटनी कब करनी चाहिए?\") का उत्तर हमारे पास उपलब्ध पी.ए.यू. (PAU) के डेटाबेस में नहीं है। हमारे पास जो जानकारी उपलब्ध है, वह मुख्य रूप से धान (Paddy) की फसल, उसकी सिंचाई और कटाई से पहले पानी बंद करने के बारे में है। \n\nमूंग की कटाई के सही समय और तरीकों की सटीक जानकारी के लिए कृपया अपने नजदीकी कृषि विज्ञान केंद्र (KVK) से संपर्क करें।\n\n📚 Source: pau_paddy_overview_01, pau_paddy_irrig_04\n\n---\n⚠️ *यह AI-जनित सलाह है। महत्वपूर्ण निर्णयों के लिए अपने स्थानीय KVK (ਕ੍ਰਿਸ਼ੀ ਵਿਗਿਆਨ ਕੇਂਦਰ / Krishi Vigyan Kendra) से ਸੰਪਰਕ ਕਰੋ।*\n⚠️ *This is AI-generated advice. For critical decisions, consult your local KVK (Krishi Vigyan Kendra).*",
+      "answer_length": 678,
+      "detected_crop": null,
+      "language_used": "hindi",
+      "confidence": "medium",
+      "timestamp": "2026-09-19T01:53:57.579145",
+      "retrieved_chunks_count": 3
+    },
+    {
+      "question_id": "Q026",
+      "question": "What is the recommended dose of DAP for tomato cultivation?",
+      "language_hint": "english",
+      "answer": "I don't have enough PAU data for this. Please consult your local KVK.\n\n📚 Source: pau_wheat_fert_01, pau_paddy_fert_03, pau_paddy_overview_01\n\n---\n⚠️ *यह AI-जनित सलाह है। महत्वपूर्ण निर्णयों के लिए अपने स्थानीय KVK (ਕ੍ਰਿਸ਼ੀ ਵਿਗਿਆਨ ਕੇਂਦਰ / Krishi Vigyan Kendra) से ਸੰਪਰਕ ਕਰੋ।*\n⚠️ *This is AI-generated advice. For critical decisions, consult your local KVK (Krishi Vigyan Kendra).*",
+      "answer_length": 379,
+      "detected_crop": null,
+      "language_used": "english",
+      "confidence": "high",
+      "timestamp": "2026-09-19T01:53:58.811366",
+      "retrieved_chunks_count": 3
+    },
+    {
+      "question_id": "Q027",
+      "question": "Tamatar mein DAP ki मात्रा कितनी होनी चाहिए?",
+      "language_hint": "hindi",
+      "answer": "किसान भाई, आपके पास टमाटर (Tamatar) में डीएपी (DAP) की मात्रा के संबंध में सवाल है, लेकिन हमारे पास उपलब्ध पीएयू (PAU) डेटा केवल धान (Paddy) और गेहूं की फसल से संबंधित है। टमाटर की फसल में खाद की मात्रा के बारे में हमारे पास पीएयू का कोई डेटा उपलब्ध नहीं है।\n\nकृपया किसी भी रासायनिक खाद के प्रयोग से पहले अपने नजदीकी कृषि विज्ञान केंद्र (KVK) से संपर्क करें।\n\n📚 Source: pau_paddy_fert_03\n\n---\n⚠️ *यह AI-जनित सलाह है। महत्वपूर्ण निर्णयों के लिए अपने स्थानीय KVK (ਕ੍ਰਿਸ਼ੀ ਵਿਗਿਆਨ ਕੇਂਦਰ / Krishi Vigyan Kendra) से ਸੰਪਰਕ ਕਰੋ।*\n⚠️ *This is AI-generated advice. For critical decisions, consult your local KVK (Krishi Vigyan Kendra).*",
+      "answer_length": 626,
+      "detected_crop": null,
+      "language_used": "hindi",
+      "confidence": "medium",
+      "timestamp": "2026-09-19T01:54:00.667205",
+      "retrieved_chunks_count": 3
+    },
+    {
+      "question_id": "Q028",
+      "question": "How to control early blight in tomato?",
+      "language_hint": "english",
+      "answer": "I don't have enough PAU data for this. Please consult your local KVK.\n\n📚 Source: None (Insufficient PAU data)\n\n---\n⚠️ *यह AI-जनित सलाह है। महत्वपूर्ण निर्णयों के लिए अपने स्थानीय KVK (ਕ੍ਰਿਸ਼ੀ ਵਿਗਿਆਨ ਕੇਂਦਰ / Krishi Vigyan Kendra) से ਸੰਪਰਕ ਕਰੋ।*\n⚠️ *This is AI-generated advice. For critical decisions, consult your local KVK (Krishi Vigyan Kendra).*",
+      "answer_length": 348,
+      "detected_crop": null,
+      "language_used": "english",
+      "confidence": "high",
+      "timestamp": "2026-09-19T01:54:01.898680",
+      "retrieved_chunks_count": 3
+    },
+    {
+      "question_id": "Q029",
+      "question": "Tamatar mein early blight ka ilaj kya hai?",
+      "language_hint": "hindi",
+      "answer": "I don't have enough PAU data for this. Please consult your local KVK.\n\n📚 Source: pau_wheat_overview_01 (No data available for tomato early blight in the retrieved context)\n\n---\n⚠️ *यह AI-जनित सलाह है। महत्वपूर्ण निर्णयों के लिए अपने स्थानीय KVK (ਕ੍ਰਿਸ਼ੀ ਵਿਗਿਆਨ ਕੇਂਦਰ / Krishi Vigyan Kendra) से ਸੰਪਰਕ ਕਰੋ।*\n⚠️ *This is AI-generated advice. For critical decisions, consult your local KVK (Krishi Vigyan Kendra).*",
+      "answer_length": 410,
+      "detected_crop": null,
+      "language_used": "english",
+      "confidence": "medium",
+      "timestamp": "2026-09-19T01:54:03.373284",
+      "retrieved_chunks_count": 3
+    },
+    {
+      "question_id": "Q030",
+      "question": "What is the pruning time for guava plants in Punjab?",
+      "language_hint": "english",
+      "answer": "I don't have enough PAU data for this. Please consult your local KVK.\n\n📚 Source: None (PAU context does not contain information on guava pruning).\n\n---\n⚠️ *यह AI-जनित सलाह है। महत्वपूर्ण निर्णयों के लिए अपने स्थानीय KVK (ਕ੍ਰਿਸ਼ੀ ਵਿਗਿਆਨ ਕੇਂਦਰ / Krishi Vigyan Kendra) से ਸੰਪਰਕ ਕਰੋ।*\n⚠️ *This is AI-generated advice. For critical decisions, consult your local KVK (Krishi Vigyan Kendra).*",
+      "answer_length": 385,
+      "detected_crop": null,
+      "language_used": "english",
+      "confidence": "high",
+      "timestamp": "2026-09-19T01:54:04.581889",
+      "retrieved_chunks_count": 3
+    },
+    {
+      "question_id": "Q031",
+      "question": "Amrood ki chhntai kab karni chahiye?",
+      "language_hint": "hindi",
+      "answer": "मैं इस विषय पर क्या कहूँ, मेरे पास उपलब्ध पंजाब कृषि विश्वविद्यालय (PAU) के डेटा में अमरूद की छंटाई (pruning) के बारे में कोई जानकारी नहीं है। \n\nकृप्या किसी भी रासायनिक या कृषि संबंधी बड़े फैसले के लिए अपने नजदीकी कृषि विज्ञान केंद्र (KVK) से संपर्क करें।\n\n📚 Source: I don't have enough PAU data for this. Please consult your local KVK.\n\n---\n⚠️ *यह AI-जनित सलाह है। महत्वपूर्ण निर्णयों के लिए अपने स्थानीय KVK (ਕ੍ਰਿਸ਼ੀ ਵਿਗਿਆਨ ਕੇਂਦਰ / Krishi Vigyan Kendra) से ਸੰਪਰਕ ਕਰੋ।*\n⚠️ *This is AI-generated advice. For critical decisions, consult your local KVK (Krishi Vigyan Kendra).*",
+      "answer_length": 575,
+      "detected_crop": null,
+      "language_used": "hindi",
+      "confidence": "medium",
+      "timestamp": "2026-09-19T01:54:06.420702",
+      "retrieved_chunks_count": 3
+    },
+    {
+      "question_id": "Q032",
+      "question": "When should I apply fertilizer to mango orchards?",
+      "language_hint": "english",
+      "answer": "I don't have enough PAU data for this. Please consult your local KVK.\n\n📚 Source: None (PAU context lacks mango orchard fertilizer recommendations)\n\n---\n⚠️ *यह AI-जनित सलाह है। महत्वपूर्ण निर्णयों के लिए अपने स्थानीय KVK (ਕ੍ਰਿਸ਼ੀ ਵਿਗਿਆਨ ਕੇਂਦਰ / Krishi Vigyan Kendra) से ਸੰਪਰਕ ਕਰੋ।*\n⚠️ *This is AI-generated advice. For critical decisions, consult your local KVK (Krishi Vigyan Kendra).*",
+      "answer_length": 385,
+      "detected_crop": null,
+      "language_used": "english",
+      "confidence": "high",
+      "timestamp": "2026-09-19T01:54:07.649281",
+      "retrieved_chunks_count": 3
+    },
+    {
+      "question_id": "Q033",
+      "question": "Aam ke baag में खाद कब डालनी चाहिए?",
+      "language_hint": "hindi",
+      "answer": "नमस्कार! मैं आपका किसान मित्र हूँ। \n\nआपने आम के बाग में खाद डालने के समय के बारे में पूछा है। मेरे पास इस समय धान (paddy) और गेहूं (wheat) से संबंधित पंजाब कृषि विश्वविद्यालय (PAU) का डेटा उपलब्ध है, लेकिन आम के बाग (fruit orchards) के बारे में जानकारी इस संदर्भ में नहीं दी गई है।\n\nमैं आपके इस सवाल का उत्तर देने में असमर्थ हूँ क्योंकि मेरे पास आम के बाग के लिए PAU का पर्याप्त डेटा नहीं है। \n\nकृपया खाद डालने के सही समय और मात्रा की सटीक जानकारी के लिए अपने नजदीकी कृषि विज्ञान केंद्र (KVK) से संपर्क करें।\n\n📚 Source: pau_paddy_overview_01, pau_wheat_overview_01, pau_wheat_weather_gate_01\n\n---\n⚠️ *यह AI-जनित सलाह है। महत्वपूर्ण निर्णयों के लिए अपने स्थानीय KVK (ਕ੍ਰਿਸ਼ੀ ਵਿਗਿਆਨ ਕੇਂਦਰ / Krishi Vigyan Kendra) से ਸੰਪਰਕ ਕਰੋ।*\n⚠️ *This is AI-generated advice. For critical decisions, consult your local KVK (Krishi Vigyan Kendra).*",
+      "answer_length": 830,
+      "detected_crop": null,
+      "language_used": "hindi",
+      "confidence": "medium",
+      "timestamp": "2026-09-19T01:54:09.698180",
+      "retrieved_chunks_count": 3
+    },
+    {
+      "question_id": "Q034",
+      "question": "How to check if soil needs irrigation?",
+      "language_hint": "english",
+      "answer": "For paddy, you can check when to irrigate by observing the field after the first 15 days of standing water. When the standing water has completely seeped into the soil, wait for 2 more days before giving the next irrigation. \n\nStep-by-step guidance for paddy irrigation management (AWD protocol):\n1. **First 15 Days:** Keep water standing in the field for the first 15 days after transplanting. \n2. **After Day 15:** Stop continuous flooding. Check your field daily. \n3. **Check the Soil:** When standing ponded water completely disappears, wait for 2 days. \n4. **Apply Irrigation:** On the 2nd day after the water has infiltrated, apply the next irrigation (5 to 7 cm of water). Do not let the soil develop deep cracks.\n5. **Harvest Time:** Stop all irrigation 15 days before harvesting your crop.\n\n📚 Source: pau_paddy_overview_01, pau_paddy_irrig_02\n\n---\n⚠️ *यह AI-जनित सलाह है। महत्वपूर्ण निर्णयों के लिए अपने स्थानीय KVK (ਕ੍ਰਿਸ਼ੀ ਵਿਗਿਆਨ ਕੇਂਦਰ / Krishi Vigyan Kendra) से ਸੰਪਰਕ ਕਰੋ।*\n⚠️ *This is AI-generated advice. For critical decisions, consult your local KVK (Krishi Vigyan Kendra).*",
+      "answer_length": 1090,
+      "detected_crop": null,
+      "language_used": "english",
+      "confidence": "high",
+      "timestamp": "2026-09-19T01:54:11.522946",
+      "retrieved_chunks_count": 3
+    },
+    {
+      "question_id": "Q035",
+      "question": "Mitti mein paani ki zaroorat kaise pata lagaye?",
+      "language_hint": "hindi",
+      "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\\nPlease retry in 47.839797141s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.5-flash-lite'}, 'quotaValue': '15'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '47s'}]}}",
+      "timestamp": "2026-09-19T01:54:12.338369"
+    },
+    {
+      "question_id": "Q036",
+      "question": "What is the interval between irrigations for wheat in December?",
+      "language_hint": "english",
+      "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\\nPlease retry in 46.977959552s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-3.5-flash-lite', 'location': 'global'}, 'quotaValue': '15'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '46s'}]}}",
+      "timestamp": "2026-09-19T01:54:13.075036"
+    },
+    {
+      "question_id": "Q037",
+      "question": "Dिसम्बर में gehun को पानी देने का interval कितना होना चाहिए?",
+      "language_hint": "hindi",
+      "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\\nPlease retry in 46.305451282s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-3.5-flash-lite', 'location': 'global'}, 'quotaValue': '15'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '46s'}]}}",
+      "timestamp": "2026-09-19T01:54:13.794642"
+    },
+    {
+      "question_id": "Q038",
+      "question": "What is the NPK ratio recommended for basal application in paddy?",
+      "language_hint": "english",
+      "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\\nPlease retry in 45.517978296s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.5-flash-lite'}, 'quotaValue': '15'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '45s'}]}}",
+      "timestamp": "2026-09-19T01:54:14.612251"
+    },
+    {
+      "question_id": "Q039",
+      "question": "Paddy ke basel application ke liye NPK ratio kya hona chahiye?",
+      "language_hint": "hindi",
+      "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\\nPlease retry in 44.746136995s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.5-flash-lite'}, 'quotaValue': '15'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '44s'}]}}",
+      "timestamp": "2026-09-19T01:54:15.293981"
+    },
+    {
+      "question_id": "Q040",
+      "question": "When should I apply zinc sulfate to paddy?",
+      "language_hint": "english",
+      "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\\nPlease retry in 43.995318481s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.5-flash-lite'}, 'quotaValue': '15'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '43s'}]}}",
+      "timestamp": "2026-09-19T01:54:16.046718"
+    },
+    {
+      "question_id": "Q041",
+      "question": "Paddy mein zinc sulfate kab dalna chahiye?",
+      "language_hint": "hindi",
+      "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\\nPlease retry in 43.327438514s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.5-flash-lite'}, 'quotaValue': '15'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '43s'}]}}",
+      "timestamp": "2026-09-19T01:54:16.865713"
+    },
+    {
+      "question_id": "Q042",
+      "question": "How to identify yellow rust in wheat?",
+      "language_hint": "english",
+      "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\\nPlease retry in 42.362763162s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.5-flash-lite'}, 'quotaValue': '15'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '42s'}]}}",
+      "timestamp": "2026-09-19T01:54:17.888609"
+    },
+    {
+      "question_id": "Q043",
+      "question": "Gehun mein peeli karies kaise identify karein?",
+      "language_hint": "hindi",
+      "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\\nPlease retry in 41.461103882s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-3.5-flash-lite', 'location': 'global'}, 'quotaValue': '15'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '41s'}]}}",
+      "timestamp": "2026-09-19T01:54:18.708327"
+    },
+    {
+      "question_id": "Q044",
+      "question": "What is the recommended fungicide for wheat rust?",
+      "language_hint": "english",
+      "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\\nPlease retry in 40.537499709s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-3.5-flash-lite', 'location': 'global'}, 'quotaValue': '15'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '40s'}]}}",
+      "timestamp": "2026-09-19T01:54:19.529697"
+    },
+    {
+      "question_id": "Q045",
+      "question": "Gehun ke karies ke liye konsa fungicide recommended hai?",
+      "language_hint": "hindi",
+      "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\\nPlease retry in 39.789255815s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-3.5-flash-lite', 'location': 'global'}, 'quotaValue': '15'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '39s'}]}}",
+      "timestamp": "2026-09-19T01:54:20.346217"
+    },
+    {
+      "question_id": "Q046",
+      "question": "How to manage stem borer in paddy?",
+      "language_hint": "english",
+      "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\\nPlease retry in 38.996323968s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-3.5-flash-lite', 'location': 'global'}, 'quotaValue': '15'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '38s'}]}}",
+      "timestamp": "2026-09-19T01:54:21.053641"
+    },
+    {
+      "question_id": "Q047",
+      "question": "Paddy mein tna ka प्रबंधन kaise karein?",
+      "language_hint": "hindi",
+      "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\\nPlease retry in 38.206178176s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-3.5-flash-lite', 'location': 'global'}, 'quotaValue': '15'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '38s'}]}}",
+      "timestamp": "2026-09-19T01:54:21.834046"
+    },
+    {
+      "question_id": "Q048",
+      "question": "Should I irrigate paddy if rain is forecasted tomorrow?",
+      "language_hint": "english",
+      "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\\nPlease retry in 37.501915242s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.5-flash-lite'}, 'quotaValue': '15'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '37s'}]}}",
+      "timestamp": "2026-09-19T01:54:22.537999"
+    },
+    {
+      "question_id": "Q049",
+      "question": "Agar kal barish ka forecast ho to kya mujhe paddy ko paani dena chahiye?",
+      "language_hint": "hindi",
+      "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\\nPlease retry in 36.823162323s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.5-flash-lite'}, 'quotaValue': '15'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '36s'}]}}",
+      "timestamp": "2026-09-19T01:54:23.216340"
+    },
+    {
+      "question_id": "Q050",
+      "question": "What is the irrigation cutoff before paddy harvest?",
+      "language_hint": "english",
+      "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\\nPlease retry in 36.158187715s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.5-flash-lite'}, 'quotaValue': '15'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '36s'}]}}",
+      "timestamp": "2026-09-19T01:54:23.892241"
+    },
+    {
+      "question_id": "Q051",
+      "question": "Paddy katni se kitne din paani band karna chahiye?",
+      "language_hint": "hindi",
+      "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\\nPlease retry in 35.445906033s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.5-flash-lite'}, 'quotaValue': '15'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '35s'}]}}",
+      "timestamp": "2026-09-19T01:54:24.596268"
+    },
+    {
+      "question_id": "Q052",
+      "question": "How do I grow apple trees in Ludhiana?",
+      "language_hint": "english",
+      "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\\nPlease retry in 34.776693284s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-3.5-flash-lite', 'location': 'global'}, 'quotaValue': '15'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '34s'}]}}",
+      "timestamp": "2026-09-19T01:54:25.262800"
+    },
+    {
+      "question_id": "Q053",
+      "question": "Ludhiana mein seb ke ped kaise lagaye?",
+      "language_hint": "hindi",
+      "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\\nPlease retry in 34.024471602s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.5-flash-lite'}, 'quotaValue': '15'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '34s'}]}}",
+      "timestamp": "2026-09-19T01:54:26.018206"
+    },
+    {
+      "question_id": "Q054",
+      "question": "Is it safe to store pesticides near drinking water?",
+      "language_hint": "english",
+      "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\\nPlease retry in 33.280047131s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.5-flash-lite'}, 'quotaValue': '15'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '33s'}]}}",
+      "timestamp": "2026-09-19T01:54:26.765940"
+    },
+    {
+      "question_id": "Q055",
+      "question": "Kya peene ke paani ke pas chemicchal rakhna safe hai?",
+      "language_hint": "hindi",
+      "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\\nPlease retry in 32.600079651s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.5-flash-lite'}, 'quotaValue': '15'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '32s'}]}}",
+      "timestamp": "2026-09-19T01:54:27.438242"
+    },
+    {
+      "question_id": "Q056",
+      "question": "Where can I get soil testing done in Punjab?",
+      "language_hint": "english",
+      "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\\nPlease retry in 31.900049228s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.5-flash-lite'}, 'quotaValue': '15'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '31s'}]}}",
+      "timestamp": "2026-09-19T01:54:28.142724"
+    },
+    {
+      "question_id": "Q057",
+      "question": "Punjab mittee testing kahan karwa sakte hain?",
+      "language_hint": "hindi",
+      "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\\nPlease retry in 31.221940583s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.5-flash-lite'}, 'quotaValue': '15'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '31s'}]}}",
+      "timestamp": "2026-09-19T01:54:28.824270"
+    },
+    {
+      "question_id": "Q058",
+      "question": "What is the contact number for KVK Ludhiana?",
+      "language_hint": "english",
+      "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\\nPlease retry in 30.427824096s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.5-flash-lite'}, 'quotaValue': '15'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '30s'}]}}",
+      "timestamp": "2026-09-19T01:54:29.626210"
+    },
+    {
+      "question_id": "Q059",
+      "question": "KVK Ludhiana ka sampark nambar kya hai?",
+      "language_hint": "hindi",
+      "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\\nPlease retry in 29.603495396s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.5-flash-lite'}, 'quotaValue': '15'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '29s'}]}}",
+      "timestamp": "2026-09-19T01:54:30.438556"
+    }
+  ]
+}

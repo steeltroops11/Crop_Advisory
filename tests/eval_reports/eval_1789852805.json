@@ -1,0 +1,397 @@
+{
+  "timestamp": "2026-09-20T02:50:05",
+  "total": 8,
+  "passed": 7,
+  "avg_score": 4.631,
+  "results": [
+    {
+      "eval_id": "EVAL-01",
+      "description": "Paddy urea timing — Hinglish (most common farmer query)",
+      "query": "PR 126 lagayi hai 25 din ho gaye, urea kab aur kitna daalu?",
+      "detected_crop": "paddy",
+      "language_used": "hindi",
+      "confidence": "medium",
+      "answer_length": 1382,
+      "rule_checks": {
+        "has_kvk_referral": true,
+        "has_ai_disclaimer": true,
+        "contains_urea": false,
+        "contains_21": false,
+        "contains_42": false,
+        "no_100 kg": true,
+        "no_150 kg": true,
+        "has_devanagari_script": true
+      },
+      "dimension_scores": [
+        {
+          "name": "FAITHFULNESS",
+          "score": 5.0,
+          "reasoning": "All claims are strictly derived from the provided PAU context regarding PR 126 urea schedules."
+        },
+        {
+          "name": "ANSWER_RELEVANCE",
+          "score": 5.0,
+          "reasoning": "The response directly answers when and how much urea to apply for a 25-day-old PR 126 paddy crop."
+        },
+        {
+          "name": "LANGUAGE_COMPLIANCE",
+          "score": 5.0,
+          "reasoning": "The response is written in correct, natural Hindi matching the query language."
+        },
+        {
+          "name": "SAFETY_COMPLIANCE",
+          "score": 5.0,
+          "reasoning": "Includes a clear KVK referral disclaimer and agronomic safety warnings."
+        },
+        {
+          "name": "AGRONOMIC_ACCURACY",
+          "score": 5.0,
+          "reasoning": "Correctly follows the PAU fast-track urea schedule for PR 126 within the 35-day limit."
+        }
+      ],
+      "overall_score": 5.0,
+      "passed": true,
+      "latency_ms": 3335,
+      "error": null
+    },
+    {
+      "eval_id": "EVAL-02",
+      "description": "Wheat CRI stage irrigation — Hindi",
+      "query": "Gehun me pehla paani kab lagana chahiye?",
+      "detected_crop": "wheat",
+      "language_used": "hindi",
+      "confidence": "low",
+      "answer_length": 854,
+      "rule_checks": {
+        "has_kvk_referral": true,
+        "has_ai_disclaimer": true,
+        "contains_CRI": true,
+        "contains_20": true,
+        "contains_25": true,
+        "no_paddy": true,
+        "no_dhan": true,
+        "no_transplant": true,
+        "has_devanagari_script": true
+      },
+      "dimension_scores": [
+        {
+          "name": "FAITHFULNESS",
+          "score": 3.0,
+          "reasoning": "The retrieved context did not explicitly contain the 20-25 days CRI irrigation window, relying on general knowledge not present in the provided chunks."
+        },
+        {
+          "name": "ANSWER_RELEVANCE",
+          "score": 5.0,
+          "reasoning": "The response directly answers when to apply the first irrigation in wheat, providing specific timing and actionable advice."
+        },
+        {
+          "name": "LANGUAGE_COMPLIANCE",
+          "score": 5.0,
+          "reasoning": "The response is written in correct Hindi script matching the farmer's query language."
+        },
+        {
+          "name": "SAFETY_COMPLIANCE",
+          "score": 5.0,
+          "reasoning": "The response includes the required KVK consultation disclaimer and safe agronomic framing."
+        },
+        {
+          "name": "AGRONOMIC_ACCURACY",
+          "score": 5.0,
+          "reasoning": "The recommendation for CRI irrigation at 20-25 days is agriculturally accurate for wheat according to PAU guidelines, even if missing from the specific retrieved text chunks."
+        }
+      ],
+      "overall_score": 4.4,
+      "passed": true,
+      "latency_ms": 2684,
+      "error": null
+    },
+    {
+      "eval_id": "EVAL-03",
+      "description": "Wheat yellow rust — Punjabi (Gurmukhi script)",
+      "query": "ਕਣਕ ਵਿੱਚ ਪੀਲੀ ਕੁੰਗੀ ਦੇ ਲੱਛਣ ਦੱਸੋ ਅਤੇ ਰੋਕਥਾਮ ਕਿਵੇਂ ਕਰੀਏ?",
+      "detected_crop": "wheat",
+      "language_used": "punjabi",
+      "confidence": "low",
+      "answer_length": 514,
+      "rule_checks": {
+        "has_kvk_referral": true,
+        "has_ai_disclaimer": true,
+        "contains_ਕੁੰਗੀ": true,
+        "contains_ਟੇਬੂਕੋਨਾਜ਼ੋਲ": false,
+        "no_ਝੋਨਾ": true,
+        "no_ਝੋਨੇ": true,
+        "has_gurmukhi_script": true
+      },
+      "dimension_scores": [
+        {
+          "name": "FAITHFULNESS",
+          "score": 5.0,
+          "reasoning": "The model correctly stated that it had no information on yellow rust in the provided context, avoiding hallucination."
+        },
+        {
+          "name": "ANSWER_RELEVANCE",
+          "score": 2.0,
+          "reasoning": "While the answer is polite and refers to KVK, it fails to answer the farmer's specific question about yellow rust because the context lacked it."
+        },
+        {
+          "name": "LANGUAGE_COMPLIANCE",
+          "score": 5.0,
+          "reasoning": "The response is written in correct Punjabi (Gurmukhi script) matching the query language."
+        },
+        {
+          "name": "SAFETY_COMPLIANCE",
+          "score": 5.0,
+          "reasoning": "The model appropriately advised contacting the local KVK and included the required disclaimer."
+        },
+        {
+          "name": "AGRONOMIC_ACCURACY",
+          "score": 1.0,
+          "reasoning": "The model could not provide agronomic recommendations because the retrieved context lacked information on yellow rust."
+        }
+      ],
+      "overall_score": 3.65,
+      "passed": false,
+      "latency_ms": 2349,
+      "error": null
+    },
+    {
+      "eval_id": "EVAL-04",
+      "description": "Paddy pre-harvest irrigation cutoff — English",
+      "query": "Should I stop irrigating paddy before harvesting? When exactly?",
+      "detected_crop": "paddy",
+      "language_used": "english",
+      "confidence": "high",
+      "answer_length": 990,
+      "rule_checks": {
+        "has_kvk_referral": true,
+        "has_ai_disclaimer": true,
+        "contains_15 days": true,
+        "contains_harvest": true,
+        "no_5 days": false,
+        "no_10 days": true
+      },
+      "dimension_scores": [
+        {
+          "name": "FAITHFULNESS",
+          "score": 5.0,
+          "reasoning": "Every claim in the answer is directly supported by the retrieved PAU context without any hallucinations."
+        },
+        {
+          "name": "ANSWER_RELEVANCE",
+          "score": 5.0,
+          "reasoning": "The response directly and clearly answers when and whether to stop irrigating before harvest."
+        },
+        {
+          "name": "LANGUAGE_COMPLIANCE",
+          "score": 5.0,
+          "reasoning": "The answer is entirely in English as requested by the query."
+        },
+        {
+          "name": "SAFETY_COMPLIANCE",
+          "score": 5.0,
+          "reasoning": "Proper KVK referral disclaimers are present in both English and Hindi/Punjabi."
+        },
+        {
+          "name": "AGRONOMIC_ACCURACY",
+          "score": 5.0,
+          "reasoning": "The 15-day irrigation cutoff recommendation accurately reflects the PAU Package of Practices."
+        }
+      ],
+      "overall_score": 5.0,
+      "passed": true,
+      "latency_ms": 2475,
+      "error": null
+    },
+    {
+      "eval_id": "EVAL-05",
+      "description": "Paddy DAP + carryover from wheat rotation — Punjabi",
+      "query": "ਝੋਨੇ ਵਿੱਚ DAP ਕਿੰਨੀ ਪਾਉਣੀ ਚਾਹੀਦੀ ਹੈ ਜੇਕਰ ਕਣਕ ਵਿੱਚ ਪਹਿਲਾਂ ਤੋਂ DAP ਪਾਈ ਹੋਈ ਹੈ?",
+      "detected_crop": null,
+      "language_used": "punjabi",
+      "confidence": "medium",
+      "answer_length": 1116,
+      "rule_checks": {
+        "has_kvk_referral": true,
+        "has_ai_disclaimer": true,
+        "contains_DAP": true,
+        "contains_50": false,
+        "no_200 kg": true,
+        "no_100 kg DAP": true,
+        "has_gurmukhi_script": true
+      },
+      "dimension_scores": [
+        {
+          "name": "FAITHFULNESS",
+          "score": 5.0,
+          "reasoning": "Every claim in the response is directly supported by the retrieved PAU context regarding the wheat-paddy DAP carryover rule."
+        },
+        {
+          "name": "ANSWER_RELEVANCE",
+          "score": 5.0,
+          "reasoning": "The response directly and clearly answers the farmer's question regarding DAP application in paddy following wheat."
+        },
+        {
+          "name": "LANGUAGE_COMPLIANCE",
+          "score": 5.0,
+          "reasoning": "The answer is written in fluent and correct Punjabi using the Gurmukhi script, perfectly matching the user's query."
+        },
+        {
+          "name": "SAFETY_COMPLIANCE",
+          "score": 5.0,
+          "reasoning": "The response includes both an in-text mention and a mandatory multilingual disclaimer to consult the local KVK."
+        },
+        {
+          "name": "AGRONOMIC_ACCURACY",
+          "score": 5.0,
+          "reasoning": "The recommendation accurately reflects the PAU guideline of not applying DAP to paddy if recommended DAP was given to wheat."
+        }
+      ],
+      "overall_score": 5.0,
+      "passed": true,
+      "latency_ms": 3483,
+      "error": null
+    },
+    {
+      "eval_id": "EVAL-06",
+      "description": "Out-of-scope query — should fallback to KVK (no hallucination)",
+      "query": "How do I grow apple trees in Ludhiana?",
+      "detected_crop": null,
+      "language_used": "english",
+      "confidence": "high",
+      "answer_length": 308,
+      "rule_checks": {
+        "has_kvk_referral": true,
+        "has_ai_disclaimer": true,
+        "contains_KVK": true,
+        "contains_Krishi Vigyan Kendra": true,
+        "no_apple variety": true,
+        "no_Shimla": true,
+        "no_cold storage require": true
+      },
+      "dimension_scores": [
+        {
+          "name": "FAITHFULNESS",
+          "score": 5.0,
+          "reasoning": "The model correctly states it lacks PAU data for growing apples, avoiding hallucinations."
+        },
+        {
+          "name": "ANSWER_RELEVANCE",
+          "score": 3.0,
+          "reasoning": "The query asked about growing apples, but since context was missing, the model properly deflected to KVK rather than guessing."
+        },
+        {
+          "name": "LANGUAGE_COMPLIANCE",
+          "score": 5.0,
+          "reasoning": "The response is in clear English matching the query language."
+        },
+        {
+          "name": "SAFETY_COMPLIANCE",
+          "score": 5.0,
+          "reasoning": "Properly includes the KVK referral disclaimer and avoids giving dangerous or unverified horticultural advice."
+        },
+        {
+          "name": "AGRONOMIC_ACCURACY",
+          "score": 5.0,
+          "reasoning": "Refrains from giving inaccurate fruit cultivation advice since PAU guidelines for apples were not in context."
+        }
+      ],
+      "overall_score": 4.5,
+      "passed": true,
+      "latency_ms": 2071,
+      "error": null
+    },
+    {
+      "eval_id": "EVAL-07",
+      "description": "Safety disclaimer always present — basic paddy query",
+      "query": "Paddy me kaunsi khad daalni hai?",
+      "detected_crop": "paddy",
+      "language_used": "english",
+      "confidence": "high",
+      "answer_length": 982,
+      "rule_checks": {
+        "has_kvk_referral": true,
+        "has_ai_disclaimer": true,
+        "contains_KVK": true,
+        "contains_AI": true,
+        "has_devanagari_script": true
+      },
+      "dimension_scores": [
+        {
+          "name": "FAITHFULNESS",
+          "score": 5.0,
+          "reasoning": "Every claim regarding urea splits and the DAP rule is directly supported by the retrieved PAU context."
+        },
+        {
+          "name": "ANSWER_RELEVANCE",
+          "score": 5.0,
+          "reasoning": "The response directly answers the farmer's question about which fertilizers to apply in paddy using specific, actionable guidelines."
+        },
+        {
+          "name": "LANGUAGE_COMPLIANCE",
+          "score": 3.0,
+          "reasoning": "The answer is written in English while the farmer asked in Hindi, though the disclaimer includes some Hindi text."
+        },
+        {
+          "name": "SAFETY_COMPLIANCE",
+          "score": 5.0,
+          "reasoning": "The answer includes proper KVK referral disclaimers in both English and Hindi."
+        },
+        {
+          "name": "AGRONOMIC_ACCURACY",
+          "score": 5.0,
+          "reasoning": "The agronomic recommendations regarding urea splits and avoiding DAP if applied to the preceding wheat crop match PAU guidelines."
+        }
+      ],
+      "overall_score": 4.8,
+      "passed": true,
+      "latency_ms": 2465,
+      "error": null
+    },
+    {
+      "eval_id": "EVAL-08",
+      "description": "Weather gate integration — should hold irrigation if rain forecasted",
+      "query": "Ludhiana me aaj paddy me paani lagana hai?",
+      "detected_crop": "paddy",
+      "language_used": "hindi",
+      "confidence": "medium",
+      "answer_length": 1305,
+      "rule_checks": {
+        "has_kvk_referral": true,
+        "has_ai_disclaimer": true,
+        "contains_KVK": true,
+        "has_devanagari_script": true
+      },
+      "dimension_scores": [
+        {
+          "name": "FAITHFULNESS",
+          "score": 4.0,
+          "reasoning": "The response mostly aligns with PAU context regarding AWD and first 15 days, though it brings in external weather assumptions not in the provided text."
+        },
+        {
+          "name": "ANSWER_RELEVANCE",
+          "score": 5.0,
+          "reasoning": "Directly answers whether to irrigate today in Ludhiana and provides clear, stage-specific irrigation guidelines."
+        },
+        {
+          "name": "LANGUAGE_COMPLIANCE",
+          "score": 5.0,
+          "reasoning": "Written in fluent and correct Hindi matching the user's query language."
+        },
+        {
+          "name": "SAFETY_COMPLIANCE",
+          "score": 5.0,
+          "reasoning": "Includes standard KVK referral disclaimers both in the body and at the end of the response."
+        },
+        {
+          "name": "AGRONOMIC_ACCURACY",
+          "score": 5.0,
+          "reasoning": "Accurately reflects the PAU Package of Practices regarding the 15-day standing water rule and AWD protocol."
+        }
+      ],
+      "overall_score": 4.7,
+      "passed": true,
+      "latency_ms": 4963,
+      "error": null
+    }
+  ]
+}

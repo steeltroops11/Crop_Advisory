@@ -1,0 +1,8 @@
+.env
+venv/
+vector_db/
+__pycache__/
+*.pyc
+.cache_tmp/
+*.vsix
+.tmp
