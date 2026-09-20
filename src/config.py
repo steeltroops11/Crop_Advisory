@@ -1,6 +1,12 @@
 import os
 from pathlib import Path
-from dotenv import load_dotenv
+
+# Optional dotenv import (for local development)
+try:
+    from dotenv import load_dotenv
+    _DOTENV_AVAILABLE = True
+except ImportError:
+    _DOTENV_AVAILABLE = False
 
 # Base paths
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -8,8 +14,9 @@ DATA_DIR = BASE_DIR / "data"
 VECTOR_DB_DIR = BASE_DIR / "vector_db"
 KNOWLEDGE_BASE_PATH = DATA_DIR / "knowledge_base.json"
 
-# Load environment variables
-load_dotenv(BASE_DIR / ".env")
+# Load environment variables if dotenv is available
+if _DOTENV_AVAILABLE:
+    load_dotenv(BASE_DIR / ".env")
 
 # Settings
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "")
@@ -26,4 +33,3 @@ OPEN_METEO_BASE_URL = os.getenv(
 DEFAULT_DISTRICT = "Ludhiana"
 DEFAULT_LATITUDE = 30.9010
 DEFAULT_LONGITUDE = 75.8573
-
