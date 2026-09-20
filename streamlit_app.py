@@ -26,7 +26,7 @@ with st.form("advisory_form"):
         crop = st.selectbox(
             "Crop (optional):",
             ["auto", "paddy", "wheat"],
-            format_func=lambda x: {"auto": "Auto-detect", "paddy": "Paddy (धान)", "wheat": "Wheat (गेहूं)}"[x],
+            format_func=lambda x: {"auto": "Auto-detect", "paddy": "Paddy (धान)", "wheat": "Wheat (गेहूं)"}[x],
             index=0
         )
     with col2:
