@@ -20,3 +20,4 @@ python-multipart>=0.0.9
 twilio>=9.0.0
 
 
+streamlit>=1.28.0
