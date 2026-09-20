@@ -1,10 +1,16 @@
 import streamlit as st
-import requests
-import json
+import os
+import sys
+from pathlib import Path
 
-# ⚠️ UPDATE THIS AFTER DEPLOYING TO RENDER.COM
-BACKEND_URL = "https://kisan-mitra-api.onrender.com"  # <-- REPLACE WITH YOUR RENDER URL
+# Add the project root to sys.path so we can import src modules
+ROOT_DIR = Path(__file__).resolve().parent
+sys.path.append(str(ROOT_DIR))
 
+from src.rag_chain import CropAdvisoryRAGChain
+from src.config import GEMINI_API_KEY
+
+# Page configuration
 st.set_page_config(
     page_title="Kisan Mitra - AI Crop Advisory",
     page_icon="🌾",
@@ -13,6 +19,19 @@ st.set_page_config(
 
 st.title("🌾 Kisan Mitra")
 st.caption("AI Crop Advisory for Small Farmers in Punjab")
+
+# Initialize the RAG chain once and cache it
+@st.cache_resource
+def get_rag_chain():
+    """Initialize and return the RAG chain, handling missing API key."""
+    if not GEMINI_API_KEY:
+        st.error("⚠️ GEMINI_API_KEY is not set. Please configure it in Streamlit Cloud secrets.")
+        st.stop()
+    try:
+        return CropAdvisoryRAGChain()
+    except Exception as e:
+        st.error(f"⚠️ Failed to initialize the advisory chain: {e}")
+        st.stop()
 
 # Input form
 with st.form("advisory_form"):
@@ -52,47 +71,49 @@ with st.form("advisory_form"):
 
     submitted = st.form_submit_button("Get Advisory", type="primary")
 
+# Process form submission
 if submitted and query.strip():
-    # Prepare request
-    payload = {
-        "query": query.strip(),
-        "crop": None if crop == "auto" else crop,
-        "language": None if language == "auto" else language,
-        "district": None if not district.strip() else district.strip(),
-        "use_weather": use_weather
-    }
+    # Get the RAG chain (cached)
+    chain = get_rag_chain()
+    if chain is None:
+        # Error already shown in get_rag_chain
+        st.stop()
+
+    # Prepare parameters
+    crop_param = None if crop == "auto" else crop
+    language_param = None if language == "auto" else language
+    district_param = None if not district.strip() else district.strip()
 
     # Show loading spinner
     with st.spinner("Fetching advisory from Kisan Mitra..."):
         try:
-            response = requests.post(
-                f"{BACKEND_URL}/api/v1/advisory",
-                json=payload,
-                timeout=30
+            # Query the RAG chain
+            response = chain.query(
+                farmer_query=query.strip(),
+                crop_hint=crop_param,
+                language=language_param,
+                district=district_param,
+                use_weather=use_weather
             )
 
-            if response.status_code == 200:
-                data = response.json()
-                if data.get("success"):
-                    st.success("✅ Advisory received")
+            if response:
+                st.success("✅ Advisory received")
 
-                    # Display answer
-                    st.markdown("### 📋 Advisory")
-                    st.write(data["answer"])
+                # Display answer
+                st.markdown("### 📋 Advisory")
+                st.write(response.answer)
 
-                    # Show metadata in expandable section
-                    with st.expander("📊 Details"):
-                        st.json({
-                            "detected_crop": data.get("detected_crop"),
-                            "language_used": data.get("language_used"),
-                            "confidence": data.get("confidence"),
-                            "sources": data.get("sources")
-                        })
-                else:
-                    st.error("❌ Service returned an error")
+                # Show metadata in expandable section
+                with st.expander("📊 Details"):
+                    st.json({
+                        "detected_crop": response.detected_crop,
+                        "language_used": response.language_used,
+                        "confidence": response.confidence,
+                        "sources": response.sources
+                    })
             else:
-                st.error(f"❌ Request failed: {response.status_code} - {response.text}")
+                st.error("❌ Failed to generate advisory")
 
-        except requests.exceptions.RequestException as e:
-            st.error(f"❌ Connection error: {str(e)}")
-            st.info("Make sure the backend service is running and accessible.")
+        except Exception as e:
+            st.error(f"❌ Error while generating advisory: {e}")
+            st.info("Make sure the required API keys and services are accessible.")

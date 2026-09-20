@@ -1,23 +1,5 @@
-# Vector DB (Chroma includes a local default embedding function)
 chromadb>=0.4.22
-# Optional for higher-quality multilingual embeddings; not required for the free demo.
-# sentence-transformers>=2.2.2
-
-# LLM API (legacy — kept for compatibility)
-google-generativeai>=0.7.0
-# New Gemini SDK — used by rag_chain.py
 google-genai>=1.0.0
-
-# Backend & Web Server
-fastapi>=0.111.0
-uvicorn>=0.30.0
-pydantic>=2.7.0
-python-dotenv>=1.0.1
-requests>=2.31.0
-rich>=13.7.0
-pytest>=8.0.0
-python-multipart>=0.0.9
-twilio>=9.0.0
-
-
 streamlit>=1.28.0
+requests>=2.31.0
+python-dotenv>=1.0.1
