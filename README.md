@@ -2,6 +2,15 @@
 
 Kisan Mitra is a PAU-grounded crop advisory assistant for small farmers in Punjab. It uses a Retrieval-Augmented Generation (RAG) pipeline over Punjab Agricultural University style crop recommendations, district-level weather gates, and multilingual responses for Hindi, Punjabi, English, and Hinglish queries.
 
+## 🚀 Live Demo
+
+**[Launch Kisan Mitra](https://kisan-mitra-advis0ry.streamlit.app/)**
+
+## 💻 Source Code
+
+**[GitHub Repository](https://github.com/steeltroops11/Crop_Advisory)**
+
+
 ## Core Features
 
 - **RAG over PAU crop knowledge**: structured paddy and wheat recommendations stored in ChromaDB.
