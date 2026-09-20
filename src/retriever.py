@@ -17,7 +17,7 @@ class CropKnowledgeRetriever:
         self.client = chromadb.PersistentClient(path=str(VECTOR_DB_DIR))
         self.embed_fn = get_embedding_function()
 
-        self.collection = self.client.get_collection(
+        self.collection = self.client.get_or_create_collection(
             name=CHROMA_COLLECTION_NAME,
             embedding_function=self.embed_fn,
         )
