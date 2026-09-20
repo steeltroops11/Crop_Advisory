@@ -1,0 +1,40 @@
+services:
+  - type: web
+    name: kisan-mitra-api
+    env: docker
+    plan: free
+    region: oregon
+    dockerfilePath: ./Dockerfile
+    autoDeploy: true
+    envVars:
+      - key: GEMINI_API_KEY
+        fromBackend:
+          name: kisan-mitra-api
+          key: GEMINI_API_KEY
+      - key: OPEN_METEO_BASE_URL
+        fromBackend:
+          name: kisan-mitra-api
+          key: OPEN_METEO_BASE_URL
+      - key: TWILIO_ACCOUNT_SID
+        fromBackend:
+          name: kisan-mitra-api
+          key: TWILIO_ACCOUNT_SID
+      - key: TWILIO_AUTH_TOKEN
+        fromBackend:
+          name: kisan-mitra-api
+          key: TWILIO_AUTH_TOKEN
+      - key: EMBEDDING_MODEL_NAME
+        fromBackend:
+          name: kisan-mitra-api
+          key: EMBEDDING_MODEL_NAME
+      - key: CHROMA_DB_DIR
+        value: ./vector_db
+    disk:
+      name: vector-db
+      mountPath: /app/vector_db
+      sizeGB: 1
+    healthCheck:
+      path: /health
+      interval: 30s
+      timeout: 10s
+      restartLimit: 3
